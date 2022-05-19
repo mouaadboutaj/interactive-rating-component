@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.rating-container.none
+{
+    display: none;
+}
+
+.thanks-container.none
+{
+    display: none;
+}
+
+.card
+{
+    color : hsl(0, 0%, 100%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    width: 290px;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.star
+{
+    background-color: hsla(216, 12%, 8%, 0.267);
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.container p
+{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%)
+}
+
+
+.ratings
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ratings div
+{
+    display: inline;
+    background-color: hsla(216, 12%, 8%, 0.267);
+    color: hsl(217, 12%, 63%);
+    margin-left: 8px;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.ratings div:hover
+{
+    color: #fff;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.ratings div.active
+{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.submit
+{
+    margin-top: 20px;
+}
+
+.submit button
+{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.submit button:hover
+{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.thanks-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selection
+{
+    background-color: hsla(216, 12%, 8%, 0.267);
+    color: hsl(25, 97%, 53%);
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.thanks-container p
+{
+    text-align: center;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin-top: -10px;
+}
